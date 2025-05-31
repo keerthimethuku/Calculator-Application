@@ -1,0 +1,97 @@
+/* Dark Mode Professional Calculator Styling */
+
+body {
+    background-color: #121212;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.calculator {
+    background-color: #1f1f1f;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px #000;
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Moving Title Marquee */
+.title {
+    color: #ff9500;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#display {
+    width: 100%;
+    padding: 20px;
+    font-size: 32px;
+    text-align: right;
+    border: none;
+    background-color: #2a2a2a;
+    color: #fff;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.btn {
+    padding: 20px;
+    font-size: 20px;
+    border: none;
+    border-radius: 12px;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.btn:hover {
+    background-color: #444;
+}
+
+.operator {
+    background-color: #3a3a3a;
+}
+
+.operator:hover {
+    background-color: #555;
+}
+
+.equal {
+    grid-column: span 4;
+    background-color: #ff9500;
+    color: #000;
+    font-size: 24px;
+}
+
+.equal:hover {
+    background-color: #ffa733;
+}
+
+@media (max-width: 400px) {
+    .calculator {
+        width: 90%;
+    }
+
+    #display {
+        font-size: 28px;
+    }
+
+    .btn {
+        padding: 18px;
+        font-size: 18px;
+    }
+}
